@@ -1,0 +1,81 @@
+.settings-panel {
+	box-sizing: border-box;
+	padding: 20px 10px;
+	@include flex(column, nowrap, space-between);
+}
+.top-content {
+	box-sizing: border-box;
+	overflow-x: auto;
+	@include flex(column, nowrap, flex-start);
+		& h3 {
+			text-align: center;
+			color: $main;
+			font-size: 1.1em;
+		}
+}
+.prop-btns {
+	margin: 2px 0;
+}
+.radio-prop-group {
+	margin: 0;
+	@include flex(row, nowrap, flex-start);
+	box-sizing: border-box;
+	cursor: pointer;
+			border-radius: 3px;
+			color: rgb(87, 86, 86);
+			width: 100%;
+			background: rgba(128, 128, 128, 0.123);
+			padding: 5px;
+		& p {
+			font-size: .9em;
+			margin: 0 0 0 3px;
+			padding: 5px 0 0 20px;
+		}
+}
+.radio {
+	@include size(15px, 15px);
+	margin: auto 2px;
+	display: flex;
+	border-radius: 50%;
+	border: 1px solid lightgray;
+}
+.active-radio {
+	transition: .5s;
+	border-color: transparent;
+	background: rgba(112, 126, 138, 0.774);
+}
+
+
+
+
+
+
+
+.bottom-content {
+	margin: 10px auto 5px;
+}
+.btn-div {
+	transition: .4s;
+	margin: 5px 0;
+	box-sizing:border-box;
+	cursor: pointer;
+	width: 100%;
+	padding: 5px;
+	border-radius: 3px;
+	background: rgba($main, 0.8);
+	color: white;
+	@include flex(row, nowrap, space-between);
+		&:hover {
+			background: lighten($main, 8%);
+		}
+		& h4 {
+			text-align: center;
+			margin: 0;
+		}
+}
+
+
+.fa-sort-down {
+	font-size: 1.1em;
+	transition: .5s;
+}

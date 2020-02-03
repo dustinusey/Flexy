@@ -1,0 +1,46 @@
+// container for main content
+.flex-gen-container {
+	@include size(100%, 100%);
+	transition: opacity 1s;
+	margin: auto;
+	align-items: center;
+	@include flex(row, nowrap, space-evenly)
+}
+
+// panel
+.settings-panel {
+	@include size(85%, 200px);
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 2px 1px rgba(128, 128, 128, 0.527);
+}
+
+// flex gen
+.flex-gen {
+	transition: 2s;
+	@include size(auto, 350px);
+	@include flex(row, nowrap, flex-start);
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 2px 1px rgba(128, 128, 128, 0.527);
+}
+.flex-child-container {
+	@include flex(row, nowrap, flex-start);
+	@include size(100%, 100%);
+}
+.flex-child {
+	transition: 1s;
+	overflow: hidden;
+	padding: 10px;
+	box-sizing: border-box;
+	background: rgba($main, 0.8);
+	border-radius: 5px;
+	margin: 5px;
+	@include flex(column, nowrap, center);
+		& h2 {
+			color: white;
+			font-size: 1.1em;
+			margin: auto;
+		}
+}
+

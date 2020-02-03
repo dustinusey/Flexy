@@ -1,0 +1,96 @@
+.main-header {
+	color: rgb(255, 255, 255);
+	letter-spacing: -1px;
+	font-size: 45px;
+	margin: 0;
+	text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.7);
+}
+.sub-header {
+	margin: 0;
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.more-info-header {
+	color: gray;
+	font-size: 1.1em;
+	text-align: center;
+}
+.more-info-text {
+	text-align: center;
+	color: gray;
+	font-size: 1em;
+}
+
+
+
+.flex-options {
+	color: gray;
+	text-align: center;
+}
+.error-message {
+	display: none;
+	width: 100%;
+	padding: 5px;
+	color: white;
+	background: $main;
+	border-radius: 3px;
+	text-align: center;
+	margin: 20px auto;
+}
+.success-message {
+	display: none;
+	color: $main;
+	background: white;
+	padding: 5px;
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	right:0px;
+}
+
+.section-header {
+	color: gray;
+	margin: 30px 0 0;
+}
+
+
+//text spans 
+.bold {
+	font-family: 'Anton', sans-serif;
+	color: $main!important;
+	letter-spacing: 5px;
+	font-size: .8em;
+}
+.logo {
+	pointer-events: none;
+	@include size(150px, 150px);
+}
+.main-color {
+	color: $main;
+}
+// code output spans 
+.class-name-output,
+.child-name {
+	color: rgb(205, 159, 219);
+	font-size: 19px;
+}
+.bracket {
+	font-size: 1.1em;
+	color: gray;
+}
+.prop {
+	letter-spacing: 1px;
+	margin-left: 20px;
+	color: rgba(90, 96, 107, 0.733);
+}
+.val {
+	color:$main;
+	letter-spacing: 1px;
+}
+.fb-text {
+	text-align: center;
+	font-size: .8em;
+	color: gray;
+}

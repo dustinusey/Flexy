@@ -1,0 +1,24 @@
+.more-info-container {
+	opacity: 0;
+	background: white;
+	height: 0px;
+	width: 600px;
+	margin-top: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 1px gray;
+	transition: .6s;
+	position: relative;
+	padding: 20px 15px 15px;
+	@include flex(column, nowrap, center);
+}
+.close-more-info {
+	color: gray;
+	padding: 10px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+		& p {
+			color: red!important;
+		}
+}

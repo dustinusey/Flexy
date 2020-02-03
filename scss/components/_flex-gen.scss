@@ -1,0 +1,7 @@
+.flex-gen {
+	position: relative;
+	@include flex(column, nowrap, center);
+}
+.options {
+	margin: auto;
+}

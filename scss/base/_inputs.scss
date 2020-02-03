@@ -1,0 +1,39 @@
+* input {
+	outline: none;
+}
+* label {
+	color: $main;
+}
+.input-group {
+	@include flex(column, nowrap, center);
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+		& input {
+			text-align: center;
+			align-self: center;
+			width: 95%;
+			color: gray;
+			padding: 5px;
+			border: 1px solid rgba(128, 128, 128, 0.527);
+			border-radius: 5px;
+			height: 30px;
+		}
+		& label {
+			margin: 0 0 5px 5px;
+			align-self: left;
+		}
+}
+.element-number-div {
+	text-align: center;
+		& input {
+			margin-top: 10px;
+		}
+}
+.child-elements {
+	width: 100px!important;
+	align-self: center;
+}
+.element-number-div {
+	display: none;
+}

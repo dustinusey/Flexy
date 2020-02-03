@@ -1,0 +1,28 @@
+// class name
+.information-toggle-class-name {
+	display: none;
+	background: white;
+	border-radius: 3px;
+	@include size(auto, 250px);
+	position: absolute;
+	top: -30px;
+	right: -280px;
+	padding: 10px;
+}
+.class-name-info-text {
+	position: relative;
+		& i {
+			position: absolute; 
+			top: -25px;
+			right: -10px;
+			color: gray;
+			padding: 10px;
+			cursor: pointer;
+		}
+		& p {
+			color: gray;
+			font-size: .9em;
+		}
+}
+
+// element numbers

@@ -1,0 +1,7 @@
+
+body {
+	background: rgb(158, 169, 172);
+	font-family: 'Varela Round', sans-serif;
+	@include size(100vh, 100%);
+	@include flex(column, nowrap, center);
+}

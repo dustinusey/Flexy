@@ -1,0 +1,44 @@
+* button {
+	outline: none;
+}
+.home-button-group {
+	@include flex(row, wrap, center);
+}
+* button {
+	cursor: pointer;
+	font-size: .8em;
+	margin: 0 3px;
+	padding: 10px;
+	width: 170px;
+	min-width: 80px;
+	color: gray;
+	border-radius: 5px;
+	border: none;
+	border-bottom: 3px solid gray;
+	background: white;
+	box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.384);
+	transition: .4s;
+	letter-spacing: 1px;
+		&:hover {
+			border-bottom-color: rgba($main, 0.8);
+		}
+		&:active {
+			border-bottom-color: transparent;
+			box-shadow: inset 0px 1px 2px rgba(49, 49, 49, 0.562);
+			
+		}
+}
+
+.home-btn {
+	width: 200px;
+}
+
+
+.container-name-btn {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.code-output {
+	color: $main;
+}
